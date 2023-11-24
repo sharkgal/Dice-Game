@@ -1,39 +1,15 @@
 function getNum() {
-    return Math.floor(Math.random() * 6);
+    return Math.floor(Math.random() * 6) + 1;
 }
 
 function p1NumToImg(num) {
     let p1Img = document.querySelector(".p1-img");
-    if(num === 0) {
-        p1Img.setAttribute("src", "./assets/dice1.png");
-    } else if(num === 1) {
-        p1Img.setAttribute("src", "./assets/dice2.png");
-    } else if(num === 2) {
-        p1Img.setAttribute("src", "./assets/dice3.png");
-    } else if(num === 3) {
-        p1Img.setAttribute("src", "./assets/dice4.png");
-    } else if(num === 4) {
-        p1Img.setAttribute("src", "./assets/dice5.png");
-    } else if(num === 5) {
-        p1Img.setAttribute("src", "./assets/dice6.png");
-    }
+    p1Img.setAttribute("src", "./assets/dice" + num + ".png");
 }
 
 function p2NumToImg(num) {
     let p2Img = document.querySelector(".p2-img");
-    if(num === 0) {
-        p2Img.setAttribute("src", "./assets/dice1.png");
-    } else if(num === 1) {
-        p2Img.setAttribute("src", "./assets/dice2.png");
-    } else if(num === 2) {
-        p2Img.setAttribute("src", "./assets/dice3.png");
-    } else if(num === 3) {
-        p2Img.setAttribute("src", "./assets/dice4.png");
-    } else if(num === 4) {
-        p2Img.setAttribute("src", "./assets/dice5.png");
-    } else if(num === 5) {
-        p2Img.setAttribute("src", "./assets/dice6.png");
-    }
+    p2Img.setAttribute("src", "./assets/dice" + num + ".png");
 }
 
 function theWinner(num1, num2) {
